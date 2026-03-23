@@ -1,2 +1,6 @@
 #konfig https/ssl self signed
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache.key -out /etc/ssl/certs/apache.crt
+
+
+chmod -R 755 /usr/share/cacti/site
+chown -R www-data:www-data /usr/share/cacti/site
