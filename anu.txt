@@ -4,3 +4,6 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apa
 
 chmod -R 755 /usr/share/cacti/site
 chown -R www-data:www-data /usr/share/cacti/site
+
+#aktifkan graph cacti
+php /usr/share/cacti/site/poller.php
